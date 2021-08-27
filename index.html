@@ -34,6 +34,7 @@
 
   <!-- Realtime block info js -->
   <script src="./js/blockInfo.js"></script>
+  <script src="./js/chart.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -183,139 +184,40 @@
         </div>
       </section>
 
-      <section class="distri drk padding-top-100 " id="token">
-        <div class="container" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-
-          <div>
-            <h1 style="color: white;">
-              Total number of nodes
-            </h1>
-            <h4 style="color: white;" id="num_online_nodes">
-              30000
-            </h4>
-          </div>
-        </div>
-      </section>
-
       <!-- Token Distribution -->
       <section class="distri drk padding-top-50 padding-bottom-150 " id="token">
         <div class="container">
           <div class="row">
-
-            <!-- Token  -->
-            <div class="col-lg-7">
-              <h3>Token Distribution</h3>
-              <p>ETD Crypto token will be released on the basis of Ethereum and Bitocin platform. It’s compatibility of
-                the token with third-party services wallets, exchanges etc, and provides easy-to-use integration.</p>
-
-              <!-- Progress -->
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                  aria-valuemax="150"><span>9,000,000 <small>50%</small></span> </div>
+            <h3>Current Network Status</h3>
+            <!-- Realtime Data -->
+            <div class="row" style="margin-top: 20px; justify-items: stretch;width: 100vw; ">
+              <div class="col">
+                <h6>#Blocks</h6>
+                <span id="num_blocks">2,000,000</span>
               </div>
-
-              <div class="row">
-                <div class="col">
-                  <h6> Now Distribution</h6>
-                  <span>2,000,000</span>
-                </div>
-                <div class="col">
-                  <h6> 99,910</h6>
-                  <span>ETH Received</span>
-                </div>
-                <div class="col">
-                  <h6> 99,910</h6>
-                  <span>BTC Received</span>
-                </div>
+              <div class="col">
+                <h6> Block Time</h6>
+                <span id="num_block_time">10s</span>
               </div>
-
-              <!-- Realtime Data -->
-              <div class="row" style="margin-top: 20px;">
-                <div class="col">
-                  <h6>#Blocks</h6>
-                  <span id="num_blocks">2,000,000</span>
-                </div>
-                <div class="col">
-                  <h6> Block Time</h6>
-                  <span id="num_block_time">10s</span>
-                </div>
-                <div class="col">
-                  <h6>Network Hash Rate</h6>
-                  <span id="num_hash_rate">1000k</span>
-                </div>
-              </div>
-
-              <!-- CountdownEnd -->
-              <div class="countdown">
-                <h6>Current Distribution Section End 150/350</h6>
-                <!-- Countdown-->
-                <ul class="row">
-                  <!-- Days -->
-                  <li class="col-md-3">
-                    <article> <span class="days">00</span>
-                      <p class="days_ref">Days</p>
-                    </article>
-                  </li>
-                  <!-- Hours -->
-                  <li class="col-md-3">
-                    <article> <span class="hours">00</span>
-                      <p class="hours_ref">Hours</p>
-                    </article>
-                  </li>
-                  <!-- Mintes -->
-                  <li class="col-md-3">
-                    <article><span class="minutes">00</span>
-                      <p class="minutes_ref">Minutes</p>
-                    </article>
-                  </li>
-                  <!-- Seconds -->
-                  <li class="col-md-3">
-                    <article><span class="seconds">00</span>
-                      <p class="seconds_ref">Seconds</p>
-                    </article>
-                  </li>
-                </ul>
+              <div class="col">
+                <h6>Network Hash Rate</h6>
+                <span id="num_hash_rate">1000k</span>
               </div>
             </div>
+            <!-- Token  -->
+            <div class="col-lg-12">
+              <!-- CountdownEnd -->
+              <div class="countdown">
+                <h6>History Graph</h6>
 
-            <!-- Total Distribution -->
-            <div class="col-lg-5">
-              <h3>Total Distribution Section End <b>350/350</b></h3>
-              <p>ETD Crypto token will be released on the basis of Ethereum and Bitocin platform.</p>
-              <div class="countdown-all">
-
-                <!-- Countdown -->
-                <ul class="row">
-                  <!-- Days -->
-                  <li class="col-md-3">
-                    <article> <span class="days">234</span>
-                      <p class="days_ref">Days</p>
-                    </article>
-                  </li>
-                  <!-- Hours -->
-                  <li class="col-md-3">
-                    <article> <span class="hours">16</span>
-                      <p class="hours_ref">Hours</p>
-                    </article>
-                  </li>
-                  <!-- Mintes -->
-                  <li class="col-md-3">
-                    <article><span class="minutes">35</span>
-                      <p class="minutes_ref">Minutes</p>
-                    </article>
-                  </li>
-                  <!-- Seconds -->
-                  <li class="col-md-3">
-                    <article><span class="seconds">03</span>
-                      <p class="seconds_ref">Seconds</p>
-                    </article>
-                  </li>
-                </ul>
-                <a href="#." class="btn">Join Us</a> <a href="#." class="btn btn-inverse">Buy Now</a>
-
-                <!-- Buy Option -->
-                <div class="card-info"> <i class="fab  fa-bitcoin"></i> <i class="fab  fa-cc-discover"></i> <i
-                    class="fab  fa-cc-visa"></i> <i class="fab  fa-cc-mastercard"></i> </div>
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <canvas id="blocktime-history" height="400px"></canvas>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <canvas id="difficulty-history" height="400px"></canvas>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1015,8 +1015,8 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	-webkit-background-size: cover;
 }
 
-.main-half-layout-1 {
-	background: url(../images/ico-tech-3.jpg) center center no-repeat;
+.main-half-layout1 {
+	background: url(../images/ico-tech-4.jpg) center center no-repeat;
 	width: 50%;
 	height: 100%;
 	position: absolute;
@@ -1058,13 +1058,6 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	z-index: 1;
 }
 
-.main-half-layout.half_right_layout_1 {
-	left: 0;
-}
-.main-half-layout-container.half_right_layout_1 {
-	float: right;
-	z-index: 1;
-}
 /*=======================================================
 			Count Info
 ========================================================*/

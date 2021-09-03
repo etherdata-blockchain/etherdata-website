@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="M_Adnan">
+  <title>ETD</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="fonts/flaticon.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link rel="icon" href="images/ETDLogo.jpg" type="image/x-icon" />
+  <!-- JavaScripts -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- Online Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Montserrat:300,400,500,600,700,800"
+    rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+  <!-- Socket IO -->
+  <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"
+    integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg"
+    crossorigin="anonymous"></script>
+
+  <!-- Realtime block info js -->
+  <script src="./js/blockInfo.js"></script>
+  <script src="./js/chart.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="position-center-center">
+      <div class="ldr"></div>
+    </div>
+  </div>
+
+  <!-- Wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header class="sticky">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a> </div>
+        <nav class="navbar ownmenu navbar-expand-lg">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+              class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+              <li class="scroll active"><a href="#hme">Home</a></li>
+              <li class="scroll"> <a href="#token">Dashboard</a> </li>
+              <li class="scroll"> <a href="#activity">Technology</a> </li>
+              <li class="scroll"> <a href="#roadmap">News</a> </li>
+              <li class="scroll"> <a href="#team">About</a> </li>
+			  <li class="scroll"> <a href="#about">Updates</a> </li>
+              <li class="scroll"> <a href="#contact">Contact</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+
+    <!-- HOME MAIN  -->
+    <section class="simple-head" data-stellar-background-ratio="0.5" id="hme">
+      <!-- Particles -->
+      <div id="particles-js"></div>
+      <div class="position-center-center">
+        <div class="container text-center">
+          <h1>Ether Data</h1>
+          <p><strong>A Platform for Global Decentralized Scientific Collaboration<strong></p>
+          <p>Ether Data is a transparent solution for blockchain investors who want to participate in real-life
+            scientific research, solving technical challenges while also building sustainable ecological processes
+            aligned with economic development.
+            It is a decentralized all-purpose computing system built on the Ethereum smart contract and Disk Storage
+            Banking (DSB) distributed storage and security technologies on which everyone can contribute computing power
+            to sharing computational networks such as Berkeley Open Infrastructure for Network Computing (BOINC) and get
+            rewards in return.</p>
+          <!-- <a href="#." class="btn">Watch Video</a> 
+		  <a href=""
+		    class="btn btn-inverse" target="_blank">Light White Paper</a>
+		  <a href="./documents/517507901-ETD-WhitePaper-en-v5-2.pdf"
+            class="btn btn-inverse" target="_blank">White
+            Paper</a>-->
+        </div>
+      </div>
+    </section>
+
+
+
+
+      <!-- Why Choose Us -->
+      <section class="why-choose padding-top-150 padding-bottom-150">
+        <div class="container">
+			<div class="container text-center"><h1>High-performing. Efficient. Easy-to-use</h1></div>
+          <!-- Why Choose Us  ROW-->
+          <div class="row">
+            <div class="col-md-7 margin-top-60">
+
+              <!-- Tittle -->
+			  
+
+
+            <!-- Image -->
+            <div class="col-md-5 text-right">  </div>
+          </div>
+
+          <!-- Services ROW -->
+          <div class="row">
+
+            <!-- Services -->
+            <div class="col-md-4">
+              <div class="ib-icon"> <i class="flaticon-smartphone"></i> </div>
+              <div class="ib-info">
+                <h4 class="h6">Powerful</h4>
+                <p>You can now use the efficient, powerful underlying BOINC framework to deploy extraordinary computing
+                  solutions. Ether Data has been built by top technical teams who have used technology and data-driven
+                  research to streamline scientific research and reward contributors.</p>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-4">
+              <div class="ib-icon"> <i class="flaticon-flat-world-map"></i> </div>
+              <div class="ib-info">
+                <h4 class="h6">Highly Efficient</h4>
+                <p>ETD successfully implements one network for multiple purposes and also deploys it for network reuse.
+                  Its consensus algorithms use the new PoW+DBS+PoS mechanism to deliver maximum results. Hence, the
+                  operational efficiency of ETD is a hundred times more efficient, safe, and easy to use.</p>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-4">
+              <div class="ib-icon"> <i class="flaticon-secure-shield"></i> </div>
+              <div class="ib-info">
+                <h4 class="h6">Safe and Reliable Technology</h4>
+                <p>ETD is based on a brand-new architecture that does not compromise reliability, safety, and stability.
+                  We understand the importance of keeping your research confidential until it is ready to be used by the
+                  world.</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Token Distribution -->
+      <section class="distri drk padding-top-50 padding-bottom-150 " id="token">
+        <div class="container">
+          <div class="row">
+            <h3>Current Network Status</h3>
+            <!-- Realtime Data -->
+            <div class="row" style="margin-top: 20px; justify-items: stretch;width: 100vw; ">
+              <div class="col">
+                <h6>#Blocks</h6>
+                <span id="num_blocks">2,000,000</span>
+              </div>
+              <div class="col">
+                <h6> Block Time</h6>
+                <span id="num_block_time">10s</span>
+              </div>
+              <div class="col">
+                <h6>Network Hash Rate</h6>
+                <span id="num_hash_rate">1000k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+	  
+	  <!-- Content -->
+	  <div id="home">
+	    <section class="padding-top-50 padding-bottom-0">
+	      <div class="container-fluid">
+	        <div class="row" style="justify-content: center;">
+	          <h2>Are you a scientist or a volunteer</h2>
+	        </div>
+			<br>
+	        <div class="row" style="justify-content: center;">
+	          <a href="#scientist" type="button" class="btn btn-primary margin-1">I am a
+	            scientist</a>
+	          <a href="#volunteer" type="button" class="btn btn-secondary margin-1">I am a
+	            volunteer/blockchain investor</a>
+	        </div>
+	      </div>
+	    </section>
+
+      <!-- Development -->
+      <section class="dev-activ text-center padding-top-100 padding-bottom-50">
+        <div class="container" id="scientist" data-spy="scroll">
+          <div class="sm-intro">
+            <h2>ETD: Research Made For You</h2>
+            <p>For scientist</p>
+          </div>
+          <ul class="row margin-top-50">
+            <li class="col"> <i class="flaticon-rotate"></i>
+              <p>ETD is an open-source, collaborative research ecosystem that lets teams of researchers, engineers, and
+                other data scientists work together to build new tools for securing and using data. The system provides
+                cryptographically verifiable attribution and peer review, putting more power into the hands of
+                researchers
+                than ever before.</p>
+            </li>
+            <li class="col"><i class="flaticon-building"></i>
+              <p>ETD enables researchers to conduct large-scale distributed research with an unprecedented level of
+                transparency and fairness. Researchers can use our platform to quickly request datasets from a
+                decentralized crowd, all while maintaining the security of that dataset through our unique protocol.</p>
+            </li>
+            <li class="col"><i class="flaticon-money-1"></i>
+              <p>We provide a unified interface for distributed data storage, compute resources, and ETH smart
+                contracts,
+                all for establishing a secure, decentralized infrastructure for research data management.</p>
+            </li>
+            <li class="col"><i class="flaticon-team"></i>
+              <p>Our technology is easy-to-use and can be applied to different fields of research where data
+                verification
+                is required, including medical research, financial forecasting, data mining, bioinformatics and many
+                more.
+              </p>
+            </li>
+          </ul>
+      </section>
+
+      <hr>
+
+      <!-- Development -->
+      <section class="dev-activ text-center padding-top-100 padding-bottom-50">
+        <div class="container">
+          <div class="sm-intro" id="volunteer">
+            <h2>ETD: Become a Data Miner for Science</h2>
+            <p>For volunteer/blockchain investor</p>
+          </div>
+          <ul class="row margin-top-50 margin-bottom-50">
+            <li class="col"> <i class="flaticon-bitcoin-logo"></i>
+              <p>Be compensated when you share your data and help others. As a science crowdsourcing platform on the
+                blockchain, our technology is designed to enable participants to be compensated for sharing. Everyone
+                can
+                earn rewards by contributing their data or computing power to scientific research programs.</p>
+            </li>
+            <li class="col"><i class="flaticon-coin"></i>
+              <p>We have developed state of the art security protocols, including biometrics and encryption, to ensure
+                the
+                integrity, security and privacy of user’s data, while ensuring that all research is open access and
+                available to the public.</p>
+            </li>
+            <li class="col"><i class="flaticon-money-4"></i>
+              <p>Ether Data is a green, energy-saving and high-performance smart contract application platform. We scale
+                decentralized apps to match the performance requirements of research institutions and enterprises,
+                enabling business and consumers to make the world greener by reducing the energy consumption of
+                blockchain
+                networks.</p>
+            </li>
+          </ul>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about light-bg">
+        <!-- Right Background -->
+        <div class="main-page-section half_left_layout">
+          <div class="main-half-layout half_right_layout"> </div>
+
+          <!-- Left Content -->
+          <div class="main-half-layout-container half_right_layout" id="activity">
+            <div class="about-us-con">
+              <h3>Double-Blind Matching Algorithm</h3>
+              <p>ETD is a forerunner in double-blind matching technology to address data security concerns in
+                distributed
+                computing and big data applications. Because each node only possesses some nodes' dispersed data, the
+                calculation/index can only be derived from the data it sees. All nodes must execute coordinated actions
+                to
+                solve the matching problem.
+
+                Simultaneously, as an intermediary computer node, the auxiliary computing node is bidirectionally
+                encrypted (double-blind) for the data of the matching parties. CPCB (commutatively encrypted calculation
+                PCB, Commutative PCB) is the double-blind data PCB, and the consensus verification technique employs
+                asymmetrical group key broadcasting encryption.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about light-bg">
+        <!-- Right Background -->
+        <div class="main-page-section half_left_layout">
+          <div class="main-half-layout main-half-layout1"> </div>
+
+          <!-- Left Content -->
+          <div class="main-half-layout-container half_right_layout" id="activity">
+            <div class="about-us-con">
+              <h3>Double-Blind Matching Algorithm</h3>
+              <p>ETD is a forerunner in double-blind matching technology to address data security concerns in
+                distributed
+                computing and big data applications. Because each node only possesses some nodes' dispersed data, the
+                calculation/index can only be derived from the data it sees. All nodes must execute coordinated actions
+                to
+                solve the matching problem.
+
+                Simultaneously, as an intermediary computer node, the auxiliary computing node is bidirectionally
+                encrypted (double-blind) for the data of the matching parties. CPCB (commutatively encrypted calculation
+                PCB, Commutative PCB) is the double-blind data PCB, and the consensus verification technique employs
+                asymmetrical group key broadcasting encryption.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+	  
+
+      <!-- Road Map -->
+      <section class="road-map padding-top-150 padding-bottom-50" id="roadmap">
+        <div class="container-fluid">
+          <div class="container text-center"><h2>News</h2></div>
+
+          <!-- Road List -->
+          <ul class="edu-list margin-top-50">
+
+            <!-- Jan 2018 -->
+            <li>
+              <a
+                href="https://finance.yahoo.com/news/ether-data-blockchain-magnet-scientific-234800134.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANalrTgmA0eG2lljl906g3KyiGvxYoGH1POtWrAOy8pJNdM58SB4767ytpYM3T-NftSaeZFD1Coy-YUoOY70_3C3G_3kAWkSsGo00XhbyxjYl2dtLxtORmuPGO6W0IVb90buDrO5gMDr_rpudr7L4NL0b1RuAjOWTUEwoxgUaBgu"><img
+                  src="images/yahoo.png" alt="some_text"></a>
+              <p></p>
+              <span>July 30, 2021</span>
+              <h6>Ether Data is The New Blockchain Magnet With a Scientific and Ecological Outlook</h6>
+              <p>Robert Bo Collins, CEO of Mercantile Bank International, and cryptologist Nikolay Tasev, have announced
+                the launch of Ether Data...</p>
+
+            </li>
+            <!-- Feb 2018 -->
+            <li>
+              <a
+                href="https://www.coinspeaker.com/ethereum-data-a-greener-ecological-revolution-in-the-blockchain-industry/?__cf_chl_jschl_tk__=e7b8fefa4977800701c40ace1553124680b3d6fa-1625650081-0-AZugLmY5bb8KbaFk2uxM9dLn2mqfmH4q5uyX50MqoRZ-HIB8u4gQPlGKg0Y5NMbC_QRkWs7MZUvjd4pD3Svc-fz-x7CjMQPKdzOduHZlxRLOFhmAvPZr1O9qYeQovVndRwlNCYPIOE2Uk06lvTpDaLClQv5rOAilCRhfeRVfY8onbBwfR2MqMzhP6_n8hx4e7aBhY36e_YZyZuCt8KbdKNiV6r8yzdN7RtHqa6_vQ3yKHjzTrHG4SJmg_he6dp8f3P4w_Q6v00ge1sx9ORwTTDNf3_Yo559j0lGOQZrUb_iGnXjNdBH-XU0xcrn9V--4_PDQlmO_9BDImEqab2H4hfFWZgpFqgLEsT88lV_GBriRDTRNxR7DtMGJ11gaYWT22wOHFWEJy37jJHVZC_4xNE1K1d5k1FvjeRr5iAz6ONn7hkFeBR2-OtXYzGyQosoIkTC91RokjYJO6jlkxppYTzv0-DiTR3DmdccWV9FD4gJz"><img
+                  src="images/coinspearker.png" alt="some_text"></a>
+              <p></p>
+              <span>June 30th, 2021</span>
+              <h6>Ether Data (Former Name: Ethereum Data): A Greener Ecological Revolution in the Blockchain Industry?
+              </h6>
+              <p>As the global industry moves towards a cleaner and environmentally friendlier direction to reduce
+                carbon
+                footprint ...</p>
+            </li>
+            <!-- March 2018 -->
+            <li>
+              <a href="https://zycrypto.com/ethereum-data-purposes-green-ecological-revolution-in-blockchain/"><img
+                  src="images/ZyCrypto.jpg" alt="some_text"></a>
+              <p></p>
+              <span>July 1, 2021</span>
+              <h6>Ether Data (Former Name: Ethereum Data) Purposes Green Ecological Revolution in Blockchain</h6>
+              <p>Crypto miners are shifting from the conventional Proof-of-Work (PoW) algorithm to a greener
+                alternative.
+                Ethereum, for instance, ...</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Team Members -->
+      <section class="team style-2 padding-top-150 padding-bottom-150" id="team">
+        <div class="container">
+          <div class="heading text-center">
+            <h2>ETD Senior Team Leads </h2>
+          </div>
+		  <li class="col">
+			  <i>Nikolay Tasev</i>
+			  <p>Co-founder</p>
+              <p>Programmer, cryptologist, cryptographer and cypherpunk. Nikolay dedicated his effort in advocating widespread use of strong cryptography and privacy technologies to enhance the welfare of individuals and society. His research interests lie within the interplay of computational complexity, cumbersome security, substance randomness and inconsistent human nature of fallacy and imagination.</p>
+            </li>
+			<br>
+            <li class="col">
+				<i>Robert Bo Collins</i>
+				<p>Advisor</p>
+              <p>CEO of Mercantile Bank International. Founder of San Juan Mercantile Bank & Trust International. Former president of the New York Mercantile Exchange.</p>
+            </li>
+			<br>
+            <li class="col">
+				<i>Hans-Arno Jacobsen</i>
+			  <p>Advisor</p>
+              <p>IEEE Fellow, Professor of Computer Engineering. His research aims to ease the development of scalable, reliable, and secure ultra-large-scale distributed applications.</p>
+            </li>
+			<br>
+			<li class="col">
+				<i>Timothy Parez</i>
+			  <p>Technical Advisor</p>
+			  <p>Expert in data and network security and a leader in the field of cryptography. Inventor of QBKEY. He has worked as a security consultant for companies such as Microsoft, Adobe, and Ubisoft.</p>
+			</li>
+        </div>
+      </section>
+
+      <!-- Team Members -->
+      <section class="light-bg padding-top-150 padding-bottom-150"  id="about">
+        <div class="container">
+          <div class="heading text-center">
+            <h2>Updates</h2>
+            <p></p>
+          </div>
+          <!-- FAQS -->
+          <div class="row">
+            <div class="col-md-6">
+
+              <!-- According Style 1 -->
+              <div class="panel-group accordion" id="accordion">
+
+                <!-- According 1 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                        class="collapsed">ETD Blockchain for Android</a> </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <a
+                      href="download/ETD.apk" download="ETD.apk">
+                      <div class="panel-body">2021.09.03</div>
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- According 4 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+
+              <!-- According Style 1 -->
+              <div class="panel-group accordion" id="accordion">
+
+                <!-- According 1 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-1"
+                        class="collapsed">ETD Blockchain for iOS</a> </h4>
+                  </div>
+                  <div id="collapseOne-1" class="panel-collapse collapse">
+                    <a
+                      href="download/ETD.ipa" download="ETD.ipa">
+                      <div class="panel-body">2021.09.03</div>
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <!-- According 3 -->
+                <div class="panel panel-default">
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- Join our community -->
+  <section class="community-sec padding-top-150 padding-bottom-150">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="sm-intro">
+            <h2>Join ETD community</h2>
+            <ul class="socials">
+              <li><a href="#."><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#."><i class="fab fa-github"></i></a></li>
+              <li><a href="#."><i class="fab fa-youtube"></i></a></li>
+			  <li><a href="#."><i class="fab fa-app-store-ios"></i></a></li>
+			  <li><a href="#."><i class="fab fa-google-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <!-- <div class="container">
+      <div class="parthner">
+        <h6>Partnered with Innovative Globally</h6>
+        <ul>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>-->
+
+    <!-- Rights -->
+    <div class="rights">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2021 Ether Data Foundation</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- GO TO TOP -->
+  <a href="#" class="cd-top"><i class="ion-chevron-up"></i></a>
+  <!-- GO TO TOP End -->
+
+  <!-- Script -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

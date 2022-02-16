@@ -1016,7 +1016,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 
 .main-half-layout1 {
-	background: url(../images/ico-tech-4.jpg) center center no-repeat;
+	background: url(../images/ico-tech-3.jpg) center center no-repeat;
 	width: 50%;
 	height: 100%;
 	position: absolute;
@@ -1628,6 +1628,7 @@ footer .rights a:hover {
 	-moz-transition: opacity .3s 0s, visibility 0s 0s;
 	transition: opacity .3s 0s, visibility 0s 0s;
 }
+
 .cd-top.cd-is-visible {
 	visibility: visible;
 	opacity: 1;

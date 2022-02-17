@@ -17,6 +17,9 @@ jobs:
         run: pip3 install -r requirements.txt
       - name: Update version
         run: python3 main.py
+        env:
+          assets: '${{ github.event.release.assets }}'
+          tag: '${{ github.event.release.tag_name }}'
       - uses: EndBug/add-and-commit@v8
         with:
           default_author: github_action

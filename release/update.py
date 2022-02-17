@@ -7,7 +7,7 @@ from datetime import datetime
 from . import templates
 
 
-def read_version(old_version, assets, tag):
+def read_version(old_version: dict, assets: dict, tag: str):
     ios_version_dict = old_version['ios']
     android_version_dict = old_version['android']
 
@@ -37,7 +37,7 @@ def main():
         old_version = json.load(f)
 
     ios_version_dict, android_version_dict = read_version(
-        assets=json.loads(os.environ.get('ASSETS')), tag=os.environ.get('TAG'), old_version=old_version)
+        assets=json.loads(os.environ.get('assets')), tag=os.environ.get('tag'), old_version=old_version)
 
     # use android and ios version and url to render html
     html = template.render(android_version=android_version_dict['version'],

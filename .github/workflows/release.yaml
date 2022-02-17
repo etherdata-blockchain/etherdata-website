@@ -17,12 +17,21 @@ jobs:
           default_author: github_actions
           message: "release ${{ github.event.release.tag_name }}"
           new_branch: "master"
+      - uses: actions/upload-artifact@v2
+        with:
+          name: doc
+          path: ./dist
+          retention-days: 1
   
   publish-docs:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Retrieve
+        uses: actions/download-artifact@v2
+        with:
+          name: doc
+          path: dist
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
         with:

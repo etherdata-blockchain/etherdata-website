@@ -1,0 +1,9 @@
+name: 'Build website'
+description: 'Build your website'
+branding:
+  icon: align-center
+  color: green
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

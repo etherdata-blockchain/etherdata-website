@@ -1,0 +1,25 @@
+{
+  "name": "release",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@types/nunjucks": "^3.2.1",
+    "@vercel/ncc": "^0.33.3",
+    "moment": "^2.29.1",
+    "nunjucks": "^3.2.3",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "jest": "^27.5.1",
+    "ts-node": "^10.5.0"
+  },
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "ncc build ./main.js -o dist",
+    "start": "ts-node ./main.ts"
+  }
+}

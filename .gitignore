@@ -3,3 +3,7 @@ __pycache__
 .DS_Store
 css/.DS_Store
 .DS_Store
+node_modules
+release/yarn.lock
+release/yarn-error.log
+release/main.js
